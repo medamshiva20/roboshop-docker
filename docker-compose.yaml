@@ -16,4 +16,8 @@ services:
    - roboshop
   depends_on:
    - mongodb
+ redis:
+  image: redis
+  networks:
+   - roboshop
 ...
