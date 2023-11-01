@@ -37,4 +37,14 @@ services:
   depends_on:
    - redis
    - catalogue
+  
+ web:
+  image: web:v1
+  container_name: web
+  networks:
+   - roboshop
+  depends_on:
+   - catalogue
+   - user
+   - cart
 ...
