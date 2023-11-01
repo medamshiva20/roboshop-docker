@@ -21,4 +21,12 @@ services:
   container_name: redis
   networks:
    - roboshop
+ user:
+  image: user:v1
+  container_name: user
+  networks:
+   - roboshop
+  depends_on:
+   - redis
+   - mongodb
 ...
