@@ -2,6 +2,7 @@
 version: '3.3'
 networks:
  roboshop:
+  name: roboshop
   driver: bridge
 volumes:
  mongodb:
