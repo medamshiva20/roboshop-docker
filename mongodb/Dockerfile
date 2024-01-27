@@ -1,3 +1,3 @@
 FROM mongo:5
-# It will copy catalogue.js and user.js and also loading the data from '/docker-entrypoint-initdb.d/' directory
+# It will copy catalogue.js and user.js and also loading the data from '/docker-entrypoint-initdb.d/' directory automatically
 COPY *.js /docker-entrypoint-initdb.d/
